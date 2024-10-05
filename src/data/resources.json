@@ -1,0 +1,39 @@
+[
+    {
+      "id": "library",
+      "name": "Library Resources",
+      "description": "Access a wide range of academic materials and e-books.",
+      "link": "/resources/library"
+    },
+    {
+      "id": "career",
+      "name": "Career Services",
+      "description": "Get help with internships, resume writing, and job placements.",
+      "link": "/resources/career"
+    },
+    {
+      "id": "counseling",
+      "name": "Counseling Services",
+      "description": "Find support for mental health and personal well-being.",
+      "link": "/resources/counseling"
+    },
+    {
+      "id": "tutoring",
+      "name": "Tutoring Services",
+      "description": "Free tutoring services for various subjects.",
+      "link": "/resources/tutoring"
+    },
+    {
+      "id": "studyRooms",
+      "name": "Study Rooms",
+      "description": "Reserve study rooms for group projects or quiet study time.",
+      "link": "/resources/study-rooms"
+    },
+    {
+      "id": "events",
+      "name": "Campus Events",
+      "description": "Stay updated on events happening on campus.",
+      "link": "/resources/events"
+    }
+  ]
+  
