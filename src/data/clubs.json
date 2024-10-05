@@ -1,0 +1,75 @@
+[
+    {
+      "id": "ugdg",
+      "name": "UR GDG (Google Developer Group)",
+      "description": "UR GDG is a community of developers interested in Google technologies. We host events, workshops, and talks to enhance your skills.",
+      "contact": "ugdg@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/ugdg",
+        "website": "https://ugdg.example.com",
+        "instagram": "https://instagram.com/ugdg"
+      },
+      "logo": "urgdg.png"
+    },
+    {
+      "id": "csss",
+      "name": "UR CSSS (Computer Science Students Society)",
+      "description": "The Computer Science Students Society aims to bring together students passionate about technology and computer science. We organize hackathons, workshops, and guest lectures.",
+      "contact": "csss@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/csss",
+        "website": "https://csss.example.com",
+        "instagram": "https://instagram.com/csss"
+      },
+      "logo": "urgdg.png"
+    },
+    {
+      "id": "cybersec",
+      "name": "UR CyberSec (Cybersecurity Club)",
+      "description": "UR CyberSec focuses on cybersecurity awareness and skill-building. Join us for workshops, capture the flag events, and guest speakers.",
+      "contact": "cybersec@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/cybersec",
+        "website": "https://cybersec.example.com",
+        "instagram": "https://instagram.com/cybersec"
+      },
+      "logo": "urgdg.png"
+    },
+    {
+      "id": "mass",
+      "name": "MASS (Math and Statistics Student Society)",
+      "description": "MASS promotes interest in mathematics and statistics through events, tutoring sessions, and collaboration with faculty.",
+      "contact": "mass@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/mass",
+        "website": "https://mass.example.com",
+        "instagram": "https://instagram.com/mass"
+      },
+      "logo": "urgdg.png"
+    },
+    {
+      "id": "sss",
+      "name": "SSS (Science Student Society)",
+      "description": "SSS is dedicated to fostering interest in science among students. We host talks, experiments, and community outreach programs.",
+      "contact": "sss@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/sss",
+        "website": "https://sss.example.com",
+        "instagram": "https://instagram.com/sss"
+      },
+      "logo": "urgdg.png"
+    },
+    {
+      "id": "bugs",
+      "name": "BUGS (Bio Undergrads Society)",
+      "description": "BUGS provides a platform for biology students to collaborate, share research, and engage in community service projects.",
+      "contact": "bugs@example.com",
+      "socialLinks": {
+        "discord": "https://discord.gg/bugs",
+        "website": "https://bugs.example.com",
+        "instagram": "https://instagram.com/bugs"
+      },
+      "logo": "urgdg.png"
+    }
+  ]
+  
