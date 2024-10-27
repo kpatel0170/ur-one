@@ -20,7 +20,7 @@ const Home = () => {
         <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
           Everything in your hands at one click. Explore resources, clubs, societies, and more!
         </p>
-        <Button className="mt-6 px-8 py-2 text-lg bg-blue-700">Get Started</Button>
+        <Button className="mt-6 px-8 py-2 text-lg bg-blue-700 hover:bg-blue-800 transition duration-200">Get Started</Button>
       </section>
 
       <section className="py-16 bg-blue-100 rounded-lg shadow-md">
@@ -29,34 +29,34 @@ const Home = () => {
           <p className="mt-2 text-gray-600">Join our vibrant community! Check out these clubs:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {featuredClubs.map((club) => (
-              <Card key={club.id} className="transition-transform transform hover:scale-105 p-6">
+              <Card key={club.id} className="transition-transform transform hover:scale-105 p-6 border border-gray-200 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2">{club.name}</h3>
                 <p className="text-gray-600">{club.description}</p>
-                <Button variant="link" href={`/clubs/${club.id}`} className="mt-4">Learn more</Button>
+                <Button variant="link" href={`/clubs/${club.id}`} className="mt-4 text-blue-600 hover:underline">Learn more</Button>
               </Card>
             ))}
           </div>
           <p className="mt-6">
-            <Button variant="link" href="/clubs" className="text-blue-600 hover:underline">For more clubs, visit here</Button>
+            <Button variant="link" href="/clubs" className="text-blue-600 hover:underline">Explore more clubs</Button>
           </p>
         </div>
       </section>
 
-      <section className="py-16 rounded-lg shadow-md">
+      <section className="py-16 bg-white rounded-lg shadow-md">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-semibold">Resources</h2>
           <p className="mt-2 text-gray-600">Explore useful resources available to you:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
             {featuredResources.map((resource) => (
-              <Card key={resource.id} className="transition-transform transform hover:scale-105 p-6">
+              <Card key={resource.id} className="transition-transform transform hover:scale-105 p-6 border border-gray-200 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2">{resource.name}</h3>
                 <p className="text-gray-600">{resource.description}</p>
-                <Button variant="link" href={`/resources/${resource.id}`} className="mt-4">Visit</Button>
+                <Button variant="link" href={`/resources/${resource.id}`} className="mt-4 text-blue-600 hover:underline">Visit</Button>
               </Card>
             ))}
           </div>
           <p className="mt-6">
-            <Button variant="link" href="/resources" className="text-blue-600 hover:underline">For more resources, visit here</Button>
+            <Button variant="link" href="/resources" className="text-blue-600 hover:underline">Explore more resources</Button>
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ const Home = () => {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-semibold">Get Involved!</h2>
           <p className="mt-2 text-gray-600">Join a club today and become part of a vibrant community!</p>
-          <Button className="mt-6 bg-blue-700" href="/clubs">Explore Clubs</Button>
+          <Button className="mt-6 bg-blue-700 hover:bg-blue-800 transition duration-200" href="/clubs">Explore Clubs</Button>
         </div>
       </section>
     </Layout>

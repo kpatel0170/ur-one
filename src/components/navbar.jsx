@@ -20,17 +20,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-blue-700 shadow-md">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-white hover:text-gray-200">
+    <nav className="bg-blue-800 shadow-lg">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link href="/" className="text-3xl font-bold text-white hover:text-gray-300 transition duration-200">
           UR ONE
         </Link>
         <NavigationMenu>
-          <div className="flex space-x-6">
+          <div className="flex space-x-8">
             {navLinks.map((link) => (
               <NavigationMenuItem key={link.href}>
                 <NavigationMenuLink asChild>
-                  <Link href={link.href} className="text-white hover:text-gray-300 transition duration-200">
+                  <Link href={link.href} className="text-white hover:text-gray-300 transition duration-200 py-2 px-3 rounded-md">
                     {link.label}
                   </Link>
                 </NavigationMenuLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
             ))}
           </div>
         </NavigationMenu>
-        <Button variant="outline" className="hidden md:block text-blue-700 border border-blue-700 hover:bg-blue-100 transition duration-200">
+        <Button variant="outline" className="hidden md:block text-blue-800 border border-blue-800 hover:bg-blue-200 transition duration-200 rounded-md">
           Get Started
         </Button>
       </div>

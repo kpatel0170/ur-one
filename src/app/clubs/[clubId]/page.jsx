@@ -28,25 +28,31 @@ const ClubDetail = ({ params }) => {
   }, [club]);
 
   if (!club) {
-    return <Layout><p className="text-center text-red-600">Club not found</p></Layout>;
+    return (
+      <Layout>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <p className="text-center text-red-600 text-xl">Club not found</p>
+        </div>
+      </Layout>
+    );
   }
 
   return (
     <Layout>
-      <div className="flex flex-col items-center p-6 bg-white shadow-md rounded-lg">
+      <div className="flex flex-col items-center p-8 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105">
         {logo && (
           <Image 
             src={logo} 
             alt={`${club.name} logo`} 
             width={128} 
             height={128} 
-            className="rounded-full mb-4" 
+            className="rounded-full mb-4 border-2 border-blue-600" 
           />
         )}
         <h2 className="text-4xl font-bold text-gray-900">{club.name}</h2>
-        <p className="text-gray-700 text-lg mt-2">{club.description}</p>
+        <p className="text-gray-700 text-lg mt-2 text-center">{club.description}</p>
         <h3 className="text-xl font-semibold mt-4">Contact Info:</h3>
-        <p className="text-gray-600">{club.contact}</p>
+        <p className="text-gray-600 text-center">{club.contact}</p>
       </div>
 
       <div className="flex justify-center space-x-4 mt-6">
@@ -57,6 +63,7 @@ const ClubDetail = ({ params }) => {
             href={club.socialLinks.discord} 
             target="_blank" 
             rel="noopener noreferrer"
+            className="transition duration-200 hover:bg-blue-600 hover:text-white"
           >
             Discord
           </Button>
@@ -68,6 +75,7 @@ const ClubDetail = ({ params }) => {
             href={club.socialLinks.website} 
             target="_blank" 
             rel="noopener noreferrer"
+            className="transition duration-200 hover:bg-blue-600 hover:text-white"
           >
             Website
           </Button>
@@ -79,6 +87,7 @@ const ClubDetail = ({ params }) => {
             href={club.socialLinks.instagram} 
             target="_blank" 
             rel="noopener noreferrer"
+            className="transition duration-200 hover:bg-blue-600 hover:text-white"
           >
             Instagram
           </Button>
